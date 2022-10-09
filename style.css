@@ -1,0 +1,98 @@
+div.container {
+    text-align: center;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 0;
+}
+
+.WebGames {
+    /* border-radius: 8px; */
+    color: white;
+    text-decoration: none;
+    background-color: #2d2d2d;
+    text-align: center;
+}
+
+.img-rounded {
+    border-radius: 8px;
+    border: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+div.LeftSide {
+    background-color: black;
+    width: calc(50% - 60px);
+    float: left;
+    text-align: right;
+}
+
+div.RightSide {
+    background-color: black;
+    width: calc(50% - 60px);
+    float: right;
+    text-align: left;
+}
+
+div.Center {
+    background-color: black;
+    width: 120px;
+    float: left;
+    text-align: center;
+    margin: auto;
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+
+    .WebGames,
+    .Desktop {
+        display: block;
+    }
+
+    .Mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 992px) {
+
+    .WebGames,
+    .Desktop {
+        display: none;
+    }
+
+    .Mobile {
+        display: block;
+    }
+}
