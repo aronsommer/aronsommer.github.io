@@ -1,6 +1,12 @@
 /* Animation Start */
 
 html {
+    -webkit-animation: grow 2s linear 1;
+    -moz-animation: grow 2s linear 1;
+    animation: grow 2s linear 1;
+}
+
+body {
     -webkit-animation: spin 2s linear 1;
     -moz-animation: spin 2s linear 1;
     animation: spin 2s linear 1;
@@ -22,6 +28,16 @@ html {
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
     }
 }
 
