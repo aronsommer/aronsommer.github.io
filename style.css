@@ -34,7 +34,7 @@ body {
     padding: 0;
 }
 
-.WebGames {
+#WebGames {
     /* border-radius: 8px; */
     color: white;
     text-decoration: none;
@@ -49,32 +49,26 @@ body {
     outline: none;
 }
 
-div.LeftSide {
-    background-color: black;
-    width: calc(50% - 60px);
-    float: left;
-    text-align: right;
+table {
+    table-layout: fixed;
+    width: 575px;
+    /* height: 200px; */
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
 }
 
-div.RightSide {
-    background-color: black;
-    width: calc(50% - 60px);
-    float: right;
-    text-align: left;
-}
-
-div.Center {
-    background-color: black;
-    width: 120px;
-    float: left;
+td {
     text-align: center;
-    margin: auto;
+}
+
+.td-div {
+    height: 15px;
 }
 
 /* Desktop */
 @media screen and (min-width: 992px) {
 
-    .WebGames,
     .Desktop {
         display: block;
     }
@@ -87,7 +81,6 @@ div.Center {
 /* Mobile */
 @media screen and (max-width: 992px) {
 
-    .WebGames,
     .Desktop {
         display: none;
     }
