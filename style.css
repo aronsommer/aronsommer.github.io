@@ -1,3 +1,37 @@
+/* Animation Start */
+
+html {
+    -webkit-animation: spin 1s linear 1;
+    -moz-animation: spin 1s linear 1;
+    animation: spin 1s linear 1;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation End */
+
+html,
+body {
+    background-color: black !important;
+}
+
 div.container {
     text-align: center;
 }
@@ -8,6 +42,18 @@ a:hover,
 a:active {
     color: white;
     text-decoration: none;
+}
+
+.underline,
+a.underline:link,
+a.underline:visited,
+a.underline:hover,
+a.underline:active {
+    text-underline-offset: 10px;
+    text-decoration: wavy underline;
+    text-decoration-color: red;
+    -webkit-text-decoration: wavy underline;
+    -webkit-text-decoration-color: red;
 }
 
 html,
