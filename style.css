@@ -1,9 +1,9 @@
 /* Animation Start */
 
 html {
-    -webkit-animation: spin 1s linear 1;
-    -moz-animation: spin 1s linear 1;
-    animation: spin 1s linear 1;
+    -webkit-animation: spin 2s linear 1;
+    -moz-animation: spin 2s linear 1;
+    animation: spin 2s linear 1;
 }
 
 @-moz-keyframes spin {
