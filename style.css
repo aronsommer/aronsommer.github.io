@@ -1,17 +1,16 @@
-/* Animation Start */
+html,
+body {
+    background-color: black !important;
+}
 
-html {
+#container1 {
+    text-align: center;
     animation: grow 2s linear 1;
 }
 
-body {
+#container2 {
+    text-align: center;
     animation: spin 2s linear 1;
-}
-
-@keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 @keyframes grow {
@@ -24,15 +23,10 @@ body {
     }
 }
 
-/* Animation End */
-
-html,
-body {
-    background-color: black !important;
-}
-
-div.container {
-    text-align: center;
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 a:link,
