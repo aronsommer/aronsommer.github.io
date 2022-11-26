@@ -5,12 +5,13 @@ body {
 
 #container1 {
     text-align: center;
-    animation: grow 2s linear 1;
+    animation: fadein 2s linear 1;
+    /* animation: grow 2s linear 1; */
 }
 
 #container2 {
     text-align: center;
-    animation: spin 2s linear 1;
+    /* animation: spin 2s linear 1; */
 }
 
 @keyframes grow {
@@ -26,6 +27,16 @@ body {
 @keyframes spin {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
