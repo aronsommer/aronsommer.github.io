@@ -4,8 +4,8 @@ body {
 }
 
 #container1 {
-    text-align: center;
     animation: fadein 2s linear 1;
+    text-align: center;
     /* animation: grow 2s linear 1; */
 }
 
@@ -53,11 +53,11 @@ a.underline:link,
 a.underline:visited,
 a.underline:hover,
 a.underline:active {
-    text-underline-offset: 10px;
     text-decoration: wavy underline;
-    text-decoration-color: red;
     -webkit-text-decoration: wavy underline;
+    text-decoration-color: red;
     -webkit-text-decoration-color: red;
+    text-underline-offset: 10px;
 }
 
 html,
@@ -69,42 +69,42 @@ h4,
 h5,
 h6,
 p {
+    color: white;
     font-family: 'Source Sans 3', Helvetica, Arial, sans-serif;
     font-weight: 300;
     line-height: 1em;
-    color: white;
     text-decoration: none;
 }
 
 body {
     background-color: black;
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
     margin: 0;
     padding: 0;
+    text-rendering: optimizeLegibility;
 }
 
 #WebGames {
+    background-color: #2d2d2d;
     /* border-radius: 8px; */
     color: white;
-    text-decoration: none;
-    background-color: #2d2d2d;
     text-align: center;
+    text-decoration: none;
 }
 
 .img-rounded {
-    border-radius: 8px;
     border: 0;
-    text-decoration: none;
+    border-radius: 8px;
     outline: none;
+    text-decoration: none;
 }
 
 table {
-    table-layout: fixed;
-    width: 575px;
     /* height: 200px; */
     margin-left: auto;
     margin-right: auto;
+    table-layout: fixed;
+    width: 575px;
     /* background-color: red; */
 }
 
