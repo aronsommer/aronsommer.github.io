@@ -94,7 +94,7 @@ body {
 
 .img-rounded {
     border: 0;
-    border-radius: 8px;
+    border-radius: 16px;
     outline: none;
     text-decoration: none;
 }
