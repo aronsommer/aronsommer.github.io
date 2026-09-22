@@ -81,6 +81,7 @@ h1 {
 nav {
   display: grid;
   gap: 8px;
+  justify-items: center;
   width: 100%;
 }
 
