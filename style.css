@@ -104,4 +104,8 @@ footer {
   .webgames a:not(:first-child) {
     display: none;
   }
+
+  .webgames img {
+    transform: none;
+  }
 }
