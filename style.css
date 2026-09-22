@@ -1,0 +1,106 @@
+:root {
+  color-scheme: dark;
+  --bg: #000000;
+  --text: #ffffff;
+  --accent: #ff00ff;
+  --section-gap: 16px;
+  --icon: 160px;
+  --font-title: 48px;
+  --font-text: 32px;
+  --font-small: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  align-items: center;
+  animation: fadein 2s linear;
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+  margin: 0 auto;
+  max-width: 880px;
+  padding: var(--section-gap) 16px;
+  text-align: center;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+}
+
+h1 {
+  font-size: var(--font-title);
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin: 0;
+}
+
+.shrug {
+  color: var(--accent);
+  font-size: var(--font-text);
+  margin: 0 0 8px;
+}
+
+.webgames {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.webgames img {
+  border-radius: 18%;
+  display: block;
+  height: var(--icon);
+  transform: rotate(-3deg);
+  width: var(--icon);
+}
+
+.webgames a:nth-child(even) img {
+  transform: rotate(3deg);
+}
+
+nav {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+
+nav a {
+  font-size: var(--font-text);
+  letter-spacing: -0.02em;
+}
+
+footer {
+  font-size: var(--font-small);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --icon: 100px;
+    --font-title: 32px;
+    --font-text: 20px;
+  }
+
+  .webgames a:not(:first-child) {
+    display: none;
+  }
+}
